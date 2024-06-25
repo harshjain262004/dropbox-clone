@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dropbox.com</title>
+    <link rel="icon" type="image/x-icon"
+        href="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBw4NDQ4ODQ0NDQ0ODQoPEAkIDRAQDg0KFREWFxYRExcYKDQsJCYxGxMTIT0tMTU3Oi86Fx8/RD84Qyg5OjcBCgoKDg0OGxAQGy0mICUtLS8tNS0rLS0tLS0tLS0tLS0vKy0tLS0tLS0tLS0tLS0tLS0tLS0tLSstLS0tLS0tLf/AABEIAMgAyAMBEQACEQEDEQH/xAAbAAEAAwEBAQEAAAAAAAAAAAAABQYHBAEDAv/EADkQAAICAQEGAwUHAwMFAAAAAAABAgMEEQUGEiExcRNBUQciI2FiFDJCkaGxwTNygURS8BUWF1PR/8QAGwEBAAIDAQEAAAAAAAAAAAAAAAEFAwQGAgf/xAApEQEAAQQCAgEDBAMBAAAAAAAAAQIDBBEFIRIxIhNRYRRBcZEVQuGB/9oADAMBAAIRAxEAPwCtH0xxwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAjsexi5NRinKTaSjFNtt+SPNVVNPuXqKZn0uuxPZ1kX1uzJn9lbi+Cpx458XrNeXbr2KPI5yiirxtxtY2uOrqjdXSu7c2Bk4E+HIrai2+G+GrrsXyf8dSxxc61kU/Ge2rex67U9wizdawAAEgQlKbD2Bk58+HHrbimuK+fKutfN/wAdTSy861jx8p7bFnHquz8Vi237OsiitWY0/tWkffqUeGevrBefbqVuNzlFdWrkabd3jq6Y3T2pUouLaknGSbTjJNNSXky9prpqjcSrZpmJ1Lw9o7gCAAAAAAAAAAAAAJnd/drK2hL4MOGpPSWTbqq49vV/JFfl8jaxo+U9tqxi13Zaru5uni7PSlGPi36e9lXJcXaK8kcjl8jdyJ7nr7LzHw6LP8p80N7hudw+WVjV3QlXbCNlclo67EmmvnqerdyuifKJeK6Iq9wzneb2dyjxW7PblHm3hWP3kvob69n+bOlweamdU3v7VGTx8+6Gf21yhJxnFwlFtShNNSi/Ro6Ki5TXHlTKqqp1OpfkyPD9VVynJRhFzlJpKEE25SfkkjHXciiNzL3TTM+mgbs+zuUuG3aDcY8msKt+819cl07L8znc7m/9bP8Aa1x+O33W0bFxq6YRrqhGuuK0jXWkkl8tDm7lyq5O6p3K3oopojVL6niNw9+0BvJuli7QTlKPhX6csqlLi106TX4lyX/038PkbuPPXr7NO/iW734llW8G7WVs+XxocVTekcqrV1y7+j+TOtw+Rs5EdT2o7+JXantDFg1thKAAAAAAAAAAInUQnUS0bdPcCEowyM2UbE0pRxceSlDT1nJdey/M5fP5mvfhajX5XGJg0z8q2iU1RrioVxjCEUkoVxSjGK8kjna66qu59remKaOofs8PX5AAAmNmkLvDuzi7Qj8WHDalpHKq0Vkfk/VfJm7iZ93Hn4z/AONW/i0XfftnP/YWT9s+y+Nj6cPH43iLi8HXTXw9ddf0+Z0n+Zo+l56nf2/6qP0NX1PDfTRt3t2cXZ8fhQ4rWtJZV2jsl29F8kc3l593In5T0uLOLbs9aTRpNn0EekASAfi6qNkXCcYzhJNOFkU4yi/Jo9U1zTO4eaqYnqWd717gQjGeRhTjWkpSli5ElGGnX3JPp2f5nR8fzMzqi5G/yqMrApj5Us5OohThKAAAAAAAAAQmOk1u9vPlbPl8KfHU3rLFu5wfzXo+xX5nG2siNz1P3bVjKqtT+Grbub1Yu0ElCXh36ayxbmuPl5x9Ucll8ddxp+XpeWMui6nSv1r02579AAD55F8KoSssnGuEU3KyxpRUfU90W6q58YeKq6aI3LOt5vaI3xVbPWi5p5ti5v8Asi/3f5HR4PCf73v6VOTyEerag/a7fF8bxbPG4uLx+OXicXrxdTof09qaPCI6VX1KvLy2v27PtEa4atoLVcks2tc1/fFfuvyOfzeE187P9LXG5GPVxouPkQthGyucbISScbK2nFx9eRzdy3NE6lbU1RV6fQ8y9+ggCRBbx71Yuz01OXiX6axxaWuPn5y9Eb+Jx13Jq3HUNS/l0WvftlO8O8+VtCXxZ8FSescWnVQXf1fc63D461jx1G5UeRl3Ls/hCli1AAAAAAAAAAAAe1zcWpRbjJNNSg2mmvNaHiuiK6dVPdM1RPS+7s+0OdfDVn62Q5JZcF8SK+teffr3OezuEiY8rPv7LTH5CafjW0jDy6r642U2Rsrl0nW012OZuWrlurxqjtcU3POnyiUHvLvhjYCcNfGyOemNU17stPxvy/c38PjLmRO/Ufdq5GbRbj8sq29vBk7QnxX2e4m3HHr1VcOy9fmzrMXj7OPHxjtR3squ7PaKN5r60EoAJXYO8OTs+fFRP3G05Y9mrrn3Xry6o0MvAtZEfKO/u2rOTctTuGq7tb4Yu0Eoa+Dkctca1r3np+B+f7nJ5vGXcad+6V3j5tF2O+pTmZl1UVysusjXXHrOxpI0Ldqu5OqYbVVymmNzLN95vaHOziqwNa4c08ua+JJfQvLv17HTYXCRHyvf0p8nkd/GhQpzcpOUm5Sbbc5tttvzZ0NFEUxqFXVVM+3h7eAAAAAAAAAAAAABCXbsrZV+ZaqseuVkuWrX3YJ+cn5I18nKtWKd1yy2rNVzqGq7q7nLCqsVmRbK26DjNY1kq64arrHTq+vNnIZvI/qK9xHUL3GxPp0amVM3o3FyMVyto4smjnJtL40Fr+JLr3X6F1x/L264iivqVflYVdM+UdwqBexO+4V3YNvISAAiZiI7TG1v3X3FyMpxtv4saj3ZJtfGsWvWKfTu/wBSiz+XtW4mijuVljYNdXyq6hct6dzlm1VqvItjZTBRgsmyVlc9F+LXo+nNfkUmFyP0K9zHUrHIw/qU9Syrauy78Ox1ZFcq5c9HL7s0vOL8/I6/Hyrd+ndE7UN2zXbnVUOM2mEAAAAAAAAAAAAiQS15Lm30S9SJqiI3L1Hfpdt2PZ/dkcNuZxY9PJqnl41kfnr93/PP5FDm81TbjxtdyssXj6q/lX1DTdnbOpxa1Vj1xrgvwwXNv1k/NnL3b9d6ryrldW7VNEah1GFkCdoVTebcfHzeKyrTHyXq/Egvh2S+uK/dfqW2Fyt2xOp7ho5GDFyNx1LLds7FyMGzw8itw114bFzhYl5xZ1eNm2sindE9qO9j12p1VCPNv+WH279jbFyM6zgx63NrTisfKFafnJmpk5lrHo+Us1qxXcnUNT3Z3IxsLhst0yMhaPxLF7lb+iP8v9Dk83lrt/qnqleY+DRb9+1rKqe2/wBQEb1JO4cu0tnUZVbqyKo2QflNc0/WLXR9jNav3LNXlbljuWqbkdsy3n3Aux+K3D4silat08vGrj8tPvf45/I6jB5qmuPG71P3UuTgTR8qO4UprTk1o+eqfr6F9ExVCt1O3h6eQAAAAAAAAAInb1HvtrO4OxtmqpX0TjlZC4eK25JTpk10UH93z5/qcdymTlTX4Vx4wvcK1Z1unuV0KTcrKQdJCAAExuIJ7c+fh05Fcq74RsrkucbVy7r07mSzcuW6t0e2O5boqj5Mt/6Lsb/qPg/bpeB/69Pc8TX+n4vp/wA11Op/V5v6fy8O/v8A8Us2bH1db6algYdOPXGuiEa6orlGpcu79e5y165crq3XPa6tW6aY+Pp0GP8Alk0EIjQO9J7/AHB+x7CY69nX7qXv9sfZrrd981i5D4uG2lazukl0cF97y5/qXfF5WVFXjRG4VmdYs68pnUsmOxj0oQlAAAAAAAAB4NJ/Z04WZbj2K2iyVVkek63o9PT5o171i3ep8a4e7d2aJ6aTuz7Qq7eGrO0ps5JZUf6U39X+3y+XY5jO4au38rXcLrG5Cmrqv2vcJKSTTTTSakmmmmupRVU+PtZxO3p5n7pCejpF7d2/jYEOLIsSk03GivR2Wf2r+TaxcO7kVaphr3sii1Hcs12nvBtDbVrx8auUKn/pqG+cPW2fp+SOks4eNg0/UuzuVRcyLuTPjT6Sf/jKf2bX7TH7X14OH4Omn3dev+f0Nf8Az0Rc1NPxZf8AF1RG99ozZm8G0Ni2rHya5TqX+mvb5Q9ap+n5o2b2FjZ8edqdSxW8i7j1aqaVsLb+Nnw4sexOSScqLNFZX/cv5ObycK5jzquFxZyKLsdSlDT/AAzQEpeTkopttJJNuTaSSS6smmny9R2jyj91E3m9oVdXFVgpXWc08qX9KD+n/d5/LuXuFwtdfyu9R9lXlchFHxoZrnZtuRY7b7JW2S62WPXl6L0R1FmxbtU+NEahT13Krk7l8DOxAAAAAAAAADwjqJT6AdPRO/2Ok/u3vblbPajF+LRrzxbm9NPofl+3yKzN4u3kdx1P3bePmV2uv2ansTenDza3OFsa5QjxWU5LUZVxXVvXqvmcpk8fesVeMwu7WXbuRtWN5vaJGPFVs9KcuaeZYvdT+iPn3f6lnh8LMx9S91H2aeRyGp8bSL2FuVl7Qn9pz52VQm+Ju3V5FvbXou/5Gzk8pax6fp2I7YrOFcvT5XJaVsvZlGHWqseqNcPPh+9KXrJ+bObvZFd6ryrntb2rVNuNRDsMMemT049qbMozK3VkVRsg+nF1jL1i10ZmsZNy1V5USx3bNNyO4Zrt3crL2fP7TgTsthB8SdWqyKu+nVdvyOlxuUs5NP078Ke7hXLM+VCU3Z9ocZcNW0EoS5JZla91v64rp3X6GrmcLMfKx3DPY5HfxuLPtvenDwq1OdsbJTjxV04zUpWRa5NadF8yrxsC9dq1ENy7mUW4ZZvJvblbQbjJ+FRryxaW+HT635/t8jrMLi7WPG57qUeRmV3Z/CALSIakaCAJQAAAAAAAAAAAAAA6MDFd9sKoyrg5yUVPIkowTfm2zBkXIt0TXMb0y26ZqnTXd2Ny8bB4bJ6ZGTyfjWJcMH9EfLv1OOzuUu3516p+y+xsKi3G/crQVUztv9R0D+D16CAAE+ke1X3m3Lxs7ishpj5L1fjVpcM39cfPv1LXB5S7YnU9w0cnDt3I3HUshzsV0WzqlKubhJxc8ealBteaZ2FiuLtMVxGlBcp1LnNh429CAAAAAAAAAAAAAAAAAI/lPpaN2d9cnB4a565GNyXg2P3oR+iX8dOxT5vEW70+VPUt7Hzq7XU9w1PYm3MbPr48exS004qp8rK36SRymTi3cedVwvLORRejpJGrMdbZ9gACN23tzGwK+PIsUW9eGmOjssa8ox/4uZtY2JdvT40xthu5FFqNyyzebfXJzuKuGuPjc14Nb96cfrkv26dzq8LiLdj5VdyosjOquz11CrlvpozOwn0eglAAAAAAAAAAAAAAAAAAAPtiZVtFkbKbJV2R6WVtp9jDds0XafGqNwyUXKqZ3DSN2faHCzhqz0q58ksyC+HJ/WvLv07HMZvC1Uz5We4+y4xuQifjWvfjw4PE44+Hw8Xi8S4ODT72voUP06onx12s/OnW9qJvN7Q4V8VWBpZPmnlzXw4v6F59+ncvsHhKq/ld6j7KzJ5GI+NDN8vKsvnKy6yVlkus7Hq+x09qzRZjxohT3Lk1z2+JleAlAAAAAAAAAAAAAAAAAAAAAAQkJk6h0fbrvB8DxbPA4uLwON8HF2MH6a15/U8e2T6tetb6c5mY9hJsI7R7CQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA//Z">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="overflow" style="overflow: hidden; position: sticky; top: 0%;">
+        <div class="container-fluid bg-white overflow p-2 center" style="width: 100%; height: 65px;">
+            <div class="row">
+                <div class="col-sm-4 col-lg-6 text-start headerimg mt-1">
+                    <img src="data:image/jpeg;base64,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"
+                        alt="">
+                    <h3>Dropbox</h3>
+                </div>
+
+                <div class="col-sm-1 col-lg-1 text-center center p-2 mt-1">
+                    <div><span><svg viewBox="0 0 24 24" fill="none" class="dig-UIIcon dig-UIIcon--standard" width="24"
+                                height="24" role="presentation" focusable="false" zn_id="19">
+                                <path
+                                    d="M11.75 4C6.535 4 4 6.535 4 11.75s2.535 7.75 7.75 7.75 7.75-2.535 7.75-7.75S16.965 4 11.75 4Zm5.714 4.5H14.87a9.237 9.237 0 0 0-.623-2.711A4.454 4.454 0 0 1 17.463 8.5ZM18 11.75c.002.586-.042 1.171-.133 1.75H14.97c.022-.579.03-1.167.03-1.75s-.008-1.171-.03-1.75h2.897c.09.579.135 1.164.133 1.75ZM11.75 18c-.616 0-1.3-.41-1.598-3h3.196c-.298 2.59-.982 3-1.598 3Zm-1.712-4.5c-.024-.524-.038-1.1-.038-1.75 0-.65.014-1.226.038-1.75h3.424c.024.524.038 1.1.038 1.75 0 .65-.014 1.226-.038 1.75h-3.424ZM5.5 11.75c-.002-.586.042-1.171.133-1.75H8.53c-.022.579-.03 1.167-.03 1.75s.008 1.171.03 1.75H5.633a11.074 11.074 0 0 1-.133-1.75Zm6.25-6.25c.616 0 1.3.41 1.598 3h-3.196c.298-2.59.982-3 1.598-3Zm-2.497.289A9.236 9.236 0 0 0 8.63 8.5H6.036a4.454 4.454 0 0 1 3.217-2.711ZM6.036 15H8.63c.07.93.28 1.844.623 2.711A4.453 4.453 0 0 1 6.037 15Zm8.21 2.711A9.237 9.237 0 0 0 14.87 15h2.594a4.454 4.454 0 0 1-3.217 2.711Z"
+                                    fill="currentColor" vector-effect="non-scaling-stroke" zn_id="20"></path>
+                            </svg></span></div>
+                </div>
+                <div class="col-sm-1 col-lg-1 text-center center p-2 mt-1">Signup</div>
+                <div class="col-sm-1 col-lg-1 text-center center p-2 mt-1">Login</div>
+                <div class="col-sm-4 col-lg-2 text-center center p-2 mt-1 ">
+                    <button class="bg-info rounded" style=" width: 60%;">
+                        Get started
+                    </button>
+                </div>
+                <div class="col-sm-1 col-lg-1 center p-2 mt-1">
+                    Menu
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section style="background-color: #1d1918; padding: 1%;">
+        <div class="container-fluid text-center">
+            <div class="row text-center" style="padding: 1%;">
+                <h1 class="col-12 mt-5 p-3" style="color: aliceblue;">Join over 700 million registered <br> users who
+                    trust
+                    Dropbox
+                </h1>
+            </div>
+            <div class="row text-center">
+                <h4 class="col-12" style="padding: 1%; margin: 1%; color: aliceblue;">Easy to use, reliable, private and
+                    secure. It's no wonder Dropbox is the choice for
+                    storing and sharing your <br> most important files.</h4>
+            </div>
+            <div class="row text-center">
+                <div class="col col-lg-5"></div>
+                <button class="rounded col col-lg-2 bg-info" style="margin: 1%; height: 50px;">
+                    <h6><strong>Find Your Plan</strong></h6>
+                </button>
+                <div class="col col-lg-5"></div>
+            </div>
+            <div class="row text-center">
+                <div class="col">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-3"></div>
+                            <input class="col-md-3 col-xs-12 rounded"
+                                style="color: aliceblue; padding: 1%; margin: 1%; background-color: transparent; border: solid aliceblue 1px;"
+                                type="email" placeholder="Enter your email">
+                            <button class="col-md-3 col-xs-12 rounded"
+                                style="padding:1%; margin: 1%; color: aliceblue; background-color: transparent; border: solid aliceblue 1px;">
+                                <strong>Sign Up for Free</strong></button>
+                            <div class="col-md-3"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <video autoplay style="width: 100%; height: 100%;" autoplay loop muted>
+                        <source src="video.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row mt-5 mb-4">
+                <h2 class="col-12 text-center" style="color: aliceblue;"> What can you do with Drop Box?</h2>
+            </div>
+            <div class="row ms-5 me-5 mt-4">
+                <div class="col-md-6 col-xs-12 col-lg-3" style="text-align: center;"> <img class="pb-2"
+                        src="https://fjord.dropboxstatic.com/warp/conversion/dropbox/warp/icons/ProtectFilesDark.svg?id=522e2ebf-a0ca-4b4b-9c0b-e399442719de"
+                        alt="">
+                    <h2 style="color: aliceblue;">Store and Protect files</h2>
+                    <h6 style="color: aliceblue;">Get the storage you and your teams need with security features like
+                        file recovery, password protection, watermarking and viewer history.</h6>
+                </div>
+                <div class="col-md-6 col-xs-12 col-lg-3" style="text-align: center;"> <img class="pb-2"
+                        src="https://fjord.dropboxstatic.com/warp/conversion/dropbox/warp/icons/ProtectFilesDark.svg?id=522e2ebf-a0ca-4b4b-9c0b-e399442719de"
+                        alt="">
+                    <h2 style="color: aliceblue;">Store and Protect files</h2>
+                    <h6 style="color: aliceblue;">Get the storage you and your teams need with security features like
+                        file recovery, password protection, watermarking and viewer history.</h6>
+                </div>
+                <div class="col-md-6 col-xs-12 col-lg-3" style="text-align: center;"> <img class="pb-2"
+                        src="https://fjord.dropboxstatic.com/warp/conversion/dropbox/warp/icons/ProtectFilesDark.svg?id=522e2ebf-a0ca-4b4b-9c0b-e399442719de"
+                        alt="">
+                    <h2 style="color: aliceblue;">Store and Protect files</h2>
+                    <h6 style="color: aliceblue;">Get the storage you and your teams need with security features like
+                        file recovery, password protection, watermarking and viewer history.</h6>
+                </div>
+                <div class="col-md-6 col-xs-12 col-lg-3" style="text-align: center;"> <img class="pb-2"
+                        src="https://fjord.dropboxstatic.com/warp/conversion/dropbox/warp/icons/ProtectFilesDark.svg?id=522e2ebf-a0ca-4b4b-9c0b-e399442719de"
+                        alt="">
+                    <h2 style="color: aliceblue;">
+                        Store and Protect files
+                    </h2>
+                    <h6 style="color: aliceblue;">
+                        Get the storage you and your teams need with security features like
+                        file recovery, password protection, watermarking and viewer history.
+                    </h6>
+                </div>
+            </div>
+            <div class="row text-center mt-4">
+                <div>
+                    <h2 class="col-12 mt-2" style="color: aliceblue;">
+                        Shortcut your workday with Dropbox Dash
+                    </h2>
+                </div>
+            </div>
+            <div class="row text-center">
+                <div class="col-2"></div>
+                <h5 class="col-md-8 col-xs-12 mt-5 mb-5" style="color: aliceblue;">
+                    Quickly find, organise and share important content all in one place
+                    with the AI universal search tool built to save you time,
+                    so you can focus on the work that matters most.
+                </h5>
+                <div class="col-2"></div>
+            </div>
+            <div class="row">
+                <div class="col-md-4"></div>
+                <div class="col-md-4 center mt-4 mb-4">
+                    <button class="bg-info center rounded p-4" style="color: black; border:solid black 1px;">
+                        <strong>Get Beta dash free</strong>
+                    </button>
+                </div>
+                <div class="col-md-4"></div>
+            </div>
+            <div class="row">
+                <div class="col-md-3 col-xs-2"></div>
+                <div class="col-md-6 col-xs-8 center p-4">
+                    <img style="width: 100%;" src="dash-updated-start-page-ui-2048x1280-en_GB.webp">
+                </div>
+                <div class="col-md-3 col-xs-2"></div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-2"></div>
+                <h2 class="text-center col-8 mt-5 pt-4" style="background-color: transparent; color: aliceblue;">
+                    How will you use Dropbox?
+                </h2>
+                <div class="col-2"></div>
+            </div>
+        </div>
+        <div class="container mt-4">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-xs-12 mt-3"
+                    style="background-color: #2b2929; border: solid #1d1918 1px;">
+                    <img style="width: 100%; margin-top: 3%;"
+                        src="https://fjord.dropboxstatic.com/warp/conversion/dropbox/warp/en-us/dropbox/teams-ui-1272x424.jpg?id=be7c9ef3-bc5a-424c-8892-02c70f18657b&output_type=webp"
+                        alt="">
+                    <h4 style="color: aliceblue; " class="mt-4 ms-4 me-4">
+                        For Work
+                    </h4>
+                    <p style="color: aliceblue;" class="mt-4 ms-4 me-4">
+                        Work efficiently with teammates and clients, stay in sync on projects and keep company data safe
+                        – all in one place.
+                    </p>
+                    <button class="bg-info rounded p-4 mt-4 ms-4 me-4 mb-4">
+                        <strong>Get DropBox for work</strong>
+                    </button>
+                </div>
+                <div class="col-lg-6 col-md-6 col-xs-12 mt-3"
+                    style="background-color: #2b2929; border: solid #1d1918 1px;">
+                    <img style="width: 100%; margin-top: 3%;"
+                        src="https://fjord.dropboxstatic.com/warp/conversion/dropbox/warp/en-us/dropbox/teams-ui-1272x424.jpg?id=be7c9ef3-bc5a-424c-8892-02c70f18657b&output_type=webp"
+                        alt="">
+                    <h4 style="color: aliceblue; " class="mt-4 ms-4 me-4">
+                        For Personal Use
+                    </h4>
+                    <p style="color: aliceblue;" class="mt-4 ms-4 me-4">
+                        Keep everything that’s important to you and your family shareable and safe in one place. Back up
+                        files in the cloud, share photos and videos and more. </p>
+                    <button class="bg-info rounded p-4 mt-4 ms-4 me-4 mb-4">
+                        <strong>Get DropBox for Personal use</strong>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="container mt-4">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h2 style="color: aliceblue; margin-top: 2%;">
+                        Cloud storage you can count on
+                    </h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="container">
+                    <div class="row text-center">
+                        <div class="col-lg-4 col-xs-12" style="padding: 2%;">
+                            <h3 style="color: aliceblue; margin: 1%;  padding: 1%;">
+                                1B+
+                            </h3>
+                            <h5 style="color: aliceblue; margin: 1%;  padding: 1%;">
+                                Mobile app downloads
+                            </h5>
+                            <p style="color: aliceblue; margin: 1%; padding: 1%;">
+                                with Editors' Choice Awards from the Google Play and Apple App Store.
+                            </p>
+                        </div>
+                        <div class="col-lg-4 col-xs-12" style="padding: 2%;">
+                            <h3 style="color: aliceblue; margin: 1%;  padding: 1%;">
+                                1B+
+                            </h3>
+                            <h5 style="color: aliceblue; margin: 1%;  padding: 1%;">
+                                Mobile app downloads
+                            </h5>
+                            <p style="color: aliceblue; margin: 1%; padding: 1%;">
+                                with Editors' Choice Awards from the Google Play and Apple App Store.
+                            </p>
+                        </div>
+                        <div class="col-lg-4 col-xs-12" style="padding: 2%;">
+                            <h3 style="color: aliceblue; margin: 1%;  padding: 1%;">
+                                1B+
+                            </h3>
+                            <h5 style="color: aliceblue; margin: 1%;  padding: 1%;">
+                                Mobile app downloads
+                            </h5>
+                            <p style="color: aliceblue; margin: 1%; padding: 1%;">
+                                with Editors' Choice Awards from the Google Play and Apple App Store.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="carousel" style="background-color: #2b2929;">
+        <div class="container pt-5 pb-5">
+            <div class="row">
+                <div class="col-12">
+                    <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active" data-bs-interval="10000">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-lg-5 col-md-12 col-sm-12 col-xs-12">
+                                            <img src="https://fjord.dropboxstatic.com/warp/conversion/dropbox/dmep/assets/customer-success-stories/sundance/sundance_editor.png?id=bacc4706-0999-4aba-aecf-2289a6f0b33c&output_type=webp" alt="" 
+                                            style="width:100%; padding: 2%; height: 100%;">
+                                        </div>
+                                        <div class="col-lg-7 col-md-12 col-sm-12 col-xs-12 text-start ps-3">
+                                            <h3 class="mt-5" style="color: aliceblue;">
+                                                Dropbox increased our team's collaboration while working from home, which has increased our flexibility and could revolutionise our office culture.
+                                            </h3>
+                                            <h6 class="mt-5" style="color: aliceblue;">
+                                                    <strong>Read the full story</strong>
+                                            </h6>
+                                            <h5 class="mt-5" style="color: aliceblue;" >
+                                                Adam Montgomery
+                                            </h5>
+                                            <p class="mt-1" style="color: aliceblue;">
+                                                Senior Manager of Programming, Sundance Film Festival
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item" data-bs-interval="2000">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-lg-5 col-md-12 col-sm-12 col-xs-12">
+                                            <img src="https://fjord.dropboxstatic.com/warp/conversion/dropbox/dmep/assets/customer-success-stories/sundance/sundance_editor.png?id=bacc4706-0999-4aba-aecf-2289a6f0b33c&output_type=webp" alt="" 
+                                            style="width:100%; padding: 2%; height: 100%;">
+                                        </div>
+                                        <div class="col-lg-7 col-md-12 col-sm-12 col-xs-12 text-start ps-3">
+                                            <h3 class="mt-5" style="color: aliceblue;">
+                                                Dropbox increased our team's collaboration while working from home, which has increased our flexibility and could revolutionise our office culture.
+                                            </h3>
+                                            <h6 class="mt-5" style="color: aliceblue;">
+                                                    <strong>Read the full story</strong>
+                                            </h6>
+                                            <h5 class="mt-5" style="color: aliceblue;" >
+                                                Adam Montgomery
+                                            </h5>
+                                            <p class="mt-1" style="color: aliceblue;">
+                                                Senior Manager of Programming, Sundance Film Festival
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-lg-5 col-md-12 col-sm-12 col-xs-12">
+                                            <img src="https://fjord.dropboxstatic.com/warp/conversion/dropbox/dmep/assets/customer-success-stories/sundance/sundance_editor.png?id=bacc4706-0999-4aba-aecf-2289a6f0b33c&output_type=webp" alt="" 
+                                            style="width:100%; padding: 2%; height: 100%;">
+                                        </div>
+                                        <div class="col-lg-7 col-md-12 col-sm-12 col-xs-12 text-start ps-3">
+                                            <h3 class="mt-5" style="color: aliceblue;">
+                                                Dropbox increased our team's collaboration while working from home, which has increased our flexibility and could revolutionise our office culture.
+                                            </h3>
+                                            <h6 class="mt-5" style="color: aliceblue;">
+                                                    <strong>Read the full story</strong>
+                                            </h6>
+                                            <h5 class="mt-5" style="color: aliceblue;" >
+                                                Adam Montgomery
+                                            </h5>
+                                            <p class="mt-1" style="color: aliceblue;">
+                                                Senior Manager of Programming, Sundance Film Festival
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer style="background-color: black; padding-top: 1%;">
+        <div class="container">
+            <div class="row mt-5">
+                <div class="col-lg-2 col-md-4 col-sm-6 col-xs-6 mt-4">
+                    <h3 style="color: aliceblue;">DropBox</h3>
+                    <ul style="color: aliceblue;" class="mt-3">
+                        <li>Desktop</li>
+                        <li>Desktop</li>
+                        <li>Desktop</li>
+                        <li>Desktop</li>
+                        <li>Desktop</li>
+                        <li>Desktop</li>
+                        <li>Desktop</li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6 col-xs-6 mt-4">
+                    <h3 style="color: aliceblue;">DropBox</h3>
+                    <ul style="color: aliceblue;" class="mt-3">
+                        <li>Desktop</li>
+                        <li>Desktop</li>
+                        <li>Desktop</li>
+                        <li>Desktop</li>
+                        <li>Desktop</li>
+                        <li>Desktop</li>
+                        <li>Desktop</li>
+                        <li>Desktop</li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6 col-xs-6 mt-4">
+                    <h3 style="color: aliceblue;">DropBox</h3>
+                    <ul style="color: aliceblue;" class="mt-3">
+                        <li>Desktop</li>
+                        <li>Desktop</li>
+                        <li>Desktop</li>
+                        <li>Desktop</li>
+                        <li>Desktop</li>
+                        <li>Desktop</li>
+                        <li>Desktop</li>
+                        <li>Desktop</li>
+                        <li>Desktop</li>
+                        <li>Desktop</li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6 col-xs-6 mt-4">
+                    <h3 style="color: aliceblue;">DropBox</h3>
+                    <ul style="color: aliceblue;" class="mt-3">
+                        <li>Desktop</li>
+                        <li>Desktop</li>
+                        <li>Desktop</li>
+                        <li>Desktop</li>
+                        <li>Desktop</li>
+                        <li>Desktop</li>
+                        <li>Desktop</li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6 col-xs-6 mt-4">
+                    <h3 style="color: aliceblue;">DropBox</h3>
+                    <ul style="color: aliceblue;" class="mt-3">
+                        <li>Desktop</li>
+                        <li>Desktop</li>
+                        <li>Desktop</li>
+                        <li>Desktop</li>
+                        <li>Desktop</li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-6 col-xs-6 mt-4">
+                    <h3 style="color: aliceblue;">DropBox</h3>
+                    <ul style="color: aliceblue;" class="mt-3">
+                        <li>Desktop</li>
+                        <li>Desktop</li>
+                        <li>Desktop</li>
+                        <li>Desktop</li>
+                        <li>Desktop</li>
+                        <li>Desktop</li>
+                        <li>Desktop</li>
+                        <li>Desktop</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                        class="bi bi-twitter-x" viewBox="0 0 16 16" style="color: aliceblue; margin:1%;">
+                        <path
+                            d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                        class="bi bi-facebook" viewBox="0 0 16 16" style="color: aliceblue;  margin:1%;">
+                        <path
+                            d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951" />
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                        class="bi bi-youtube" viewBox="0 0 16 16" style="color: aliceblue;  margin:1%;">
+                        <path
+                            d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z" />
+                    </svg>
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col-lg-2" style="border: solid aliceblue 1px;">
+
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-12">
+                    <h5 class="pt-3 pb-3" style="color: aliceblue;">
+                        English(United Kingdom)
+                    </h5>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

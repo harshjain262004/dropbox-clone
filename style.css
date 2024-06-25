@@ -1,0 +1,31 @@
+body{
+background-color: #1d1918;
+overflow-x: hidden;
+overflow-y: scroll;
+}
+::-webkit-scrollbar {
+    display: none;
+}
+.headerimg{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    height: 40px;
+    padding-left: 15px;
+}
+
+.center{
+    text-align: center;
+}
+
+.overflow{
+    overflow: hidden;
+}
+ul{
+    list-style: none;
+    text-align: left;
+}
+
+.footcol{
+    display: none   ;     
+}
